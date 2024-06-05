@@ -1,0 +1,579 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.header{
+    background-image: url("backgrounfd.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+}
+nav{
+    /* background-color: rebeccapurple; */
+    position: relative;
+    z-index: 5;
+    
+}
+.header nav span img{
+    width: 100px;
+    mix-blend-mode: multiply;
+}
+.header nav .btn button{
+    /* background-color: red; */
+    font-family: monospace;
+    padding: 10px;
+    font-size: 12px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: red;
+    color:white;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.header nav .btn button .btn-2{
+    margin-left: 105px;
+}
+.header nav{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+}
+.header .main{
+    width: 100%;
+    height: 75vh;
+    background-color: black;
+    opacity: 0.60;
+    position: absolute;
+    top: 0;
+}
+
+
+.header .head-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    height: calc(100% - 90px);   
+     /* z-index: 5; */
+}
+/* .header .head-cont> :nth-child(1) ....> it means kay child ka first wali hiii usi div ka*/
+.header .head-cont> :nth-child(1){
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    padding: 10px;
+}
+.header .head-cont> :nth-child(2){
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+}
+.header .head-cont> :nth-child(3){
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+}
+.header .last-head-part{
+    margin: 15px;
+}
+.header .last-head-part input{
+    padding: 16px 82px 16px 10px;    
+    border: 1px solid white;
+    background: transparent;
+    color: rgb(253, 253, 253);
+    font-size: 16px;
+}
+.header .last-head-part button{
+font-family: monospace;
+padding: 10px;
+font-size: 12px;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+border-radius: 4px;
+background-color: red;
+color:white;
+border: none;
+margin-left: 7px;
+cursor: pointer;
+}
+.header .btn-hov{
+    transform: 0.5s;
+}
+.header .btn-hov:hover{
+    background-color: rgb(44, 43, 43);
+}
+
+
+.line-seprator{
+    width: 100%;
+    height: 7px;
+    background-color: rgb(101, 101, 102);
+    position: relative;
+    z-index: 20;
+}
+/* end head styling */
+
+
+
+
+
+
+
+/* starting first section styling */
+.sec-1{
+    padding: 54px 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* jab hm kisi chez ko center krna chahy to max width da kr margin auto krni ho gi  */
+    max-width: 70vw;
+    margin: auto;
+    /* jab hm kisi chez ko center krna chahy to max width da kr margin auto krni ho gi */
+    width: 100vw; 
+    height: 60vh;
+    /* width: 100%; */
+   
+}
+
+.sec-1 .sec1-img-tv img{
+    width: 30vw;
+}
+.sec-1 .sec-1-cont{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 40vw;
+}
+.sec-1 .sec-1-cont .p-1{
+    font-size: 45px;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.sec-1 .sec-1-cont .p-2{
+    font-size: 30px;
+    font-weight:500;
+    font-family: sans-serif;
+}
+
+/* adkusing the video in img */
+.sec-1 .sec1-img-tv video {
+    width: 550px;
+    top: 51px;
+    right: 0px;
+    position: absolute;   
+
+}
+
+.sec-1 .sec1-img-tv img{
+    position: relative;
+    z-index: 10; 
+    width: 560px;
+}
+.sec-1 .sec1-img-tv{
+    position: relative;
+}
+
+/* Styling last sectoin */
+
+.last-div-part1 .question-box span{
+    color: white;
+}
+.last-div-part1 h2{
+    color: white;
+   text-align: center;
+   padding: 34px;
+   margin-top: 3%;
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    font-family: system-ui;
+}
+.last-div-part1 .question-box {
+    display: flex;
+    background-color: rgb(56, 55, 55);
+    align-items: center;
+    padding: 16px;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: 5px auto; 
+}
+.last-div-part1 .question-box:hover{
+    cursor: pointer;
+    background-color: rgb(88, 87, 87);
+}
+
+.last-div-part1 .question-box span{
+    font-size: 22px;
+    font-family: system-ui;
+}
+
+/* last-div-part1 ka nex div style */
+.last-div-part2 p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 3%;
+     font-size: 15px;
+     font-weight: 500;
+     padding-bottom: 10px;
+     font-family: system-ui;
+
+}
+.last-div-part2 .part2-inp-btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px 0px 15px 0px;
+    padding-bottom: 4%;
+}
+
+.last-div-part2 .part2-inp-btn-box input{
+  border: none;
+  padding: 15px 71px 15px 12px;
+  font-size: 14px;
+  font-size: 15px;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+
+.last-div-part2 .part2-inp-btn-box  button{
+    background-color:red;
+    padding: 15px 30px 15px 12px;
+    font-size: 14px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.last-div-part2 .part2-inp-btn-box  button:hover{
+background-color: rgb(185, 21, 21);
+color: white;
+transition: 0.5s all ease-in-out;
+}
+
+
+/* Designing FOoter */
+
+footer .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+    max-width: 60vw;
+    margin: auto;
+}
+footer{
+      margin: 62px 20vw;
+    font-size: 35px;
+}
+footer span{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+  
+    padding: 50px 0px;
+}
+footer span a{
+    margin-left: 10px;
+    color: white;   
+}
+.footer-data ul a{
+    color: white;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size:25px;
+    margin: 15px;
+
+}
+/* @Media Quires */
+/*
+ @media screen and (max-width:1350px) {
+    .sec-1{
+      flex-wrap: wrap;
+    }
+
+    .sec-1 .sec-1-cont .p-1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+.sec-1 .sec-1-cont .p-2 {
+    font-size: 26px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+}
+@media screen and (max-width:700px) {
+    .sec-1{
+      flex-wrap: wrap;
+    }
+
+    .sec-1 .sec-1-cont .p-1 {
+    font-size: 25px;
+    font-weight: 600;
+}
+.sec-1 .sec-1-cont .p-2 {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: sans-serif;
+}
+}
+
+@media screen and (max-width:400px) {
+    .sec-1{
+      flex-wrap: wrap;
+    }
+    .sec-1 .sec1-img-tv img {
+        position: relative;
+        z-index: 10;
+        width: 300px;
+    }
+    .sec-1 .sec1-img-tv video {
+        width: 300px;
+        top: 47px;
+        right: 0px;
+        position: absolute;
+    }
+
+
+    .sec-1 .sec-1-cont .p-1 {
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .sec-1 .sec-1-cont .p-2 {
+        font-size: 15px;
+        font-weight: 300;
+        font-family: sans-serif;
+    }
+} */
+
+@media (min-width: 800px) and (max-width: 1300px){
+    /* body{
+        background-color: red;
+    } */
+    .sec-1{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .sec-1 .sec-1-cont .p-1 {
+        padding: 23px 0px 0px 0px;
+        font-size: 25px;
+    }
+    .sec-1 .sec-1-cont .p-2 {
+        font-size: 22px;
+    }
+    .sec-1 .sec1-img-tv video {
+        width: 450px;
+    }
+    .sec-1 .sec1-img-tv img {
+        width: 460px;
+    }
+    .sec-1 .sec-1-cont{
+        padding: 20px 0px 0px 0px;    }
+     
+}
+@media (min-width: 500px) and (max-width:800px){
+    /* body{
+        background-color: yellow:
+        } */
+    .sec-1{
+        flex-wrap: wrap;
+        height: 50%;
+    }
+    .sec-1 .sec-1-cont .p-1 {
+        font-size: 23px;
+    }
+    .sec-1 .sec-1-cont .p-2 {
+        font-size: 18px;
+    }
+    .sec-1 .sec1-img-tv video {
+        width: 308px;
+    }
+    .sec-1 .sec1-img-tv img {
+        width: 317px;
+    }
+    .sec-1 .sec-1-cont{
+        padding-bottom: 26px;
+    }
+     
+}
+@media (min-width: 200px) and (max-width:500px){
+    /* body{
+        background-color: purple;
+    } */
+    .sec-1{
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    .sec-1 .sec-1-cont .p-1 {
+        font-size: 16px;
+    }
+    .sec-1 .sec-1-cont .p-2 {
+        font-size: 13px;
+    }
+    .sec-1 .sec1-img-tv video {
+        width: 182px;
+    }
+    .sec-1 .sec1-img-tv img {
+        width: 217px;
+    }
+    .sec-1 .sec-1-cont{
+        padding-bottom: 26px;
+    }
+     
+}
+@media (max-width: 850px){
+    .header .head-cont> :nth-child(1) {
+        font-size: 32px;
+    }
+    .header .head-cont> :nth-child(2) {
+        font-size: 20px;
+    }
+    .header .head-cont> :nth-child(3) {
+        font-size: 18px;
+    }
+    .header .last-head-part input {
+        padding: 6px 15px 6px 6px;
+    }
+    .header .last-head-part button {
+        padding: 10px;
+    }
+    footer span {
+        font-size: 30px;
+    }
+    footer .footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} 
+@media (max-width: 650px){
+    .header .head-cont> :nth-child(1) {
+        font-size: 27px;
+    }
+    .header .head-cont> :nth-child(2) {
+        font-size: 18px;
+    }
+    .header .head-cont> :nth-child(3) {
+        font-size: 16px;
+    }
+    .header .last-head-part input {
+        padding: 4px 10px 4px 5px;
+    }
+    .header .last-head-part button {
+        padding: 6px;
+    }
+    .header{
+        height: 70vh;
+    }
+    .header nav {
+        height: 60px;
+    }
+    .header .main {
+        height: 70vh;
+    }
+    .header .head-cont {
+        height: calc(100% - 70px);
+    }
+    .header nav span img {
+        width: 80px;
+    }
+    .header nav .btn button {
+        padding: 8px;
+        font-size: 10px;
+    }
+    footer span {
+        font-size: 20px;
+    }
+    footer .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+ @media (max-width: 475px){
+    .header .head-cont> :nth-child(1) {
+        font-size: 21px;
+    }
+    .header .head-cont> :nth-child(2) {
+        font-size: 15px;
+    }
+    .header .head-cont> :nth-child(3) {
+        font-size: 12px;
+    }
+    .header .last-head-part input {
+        padding: 3px 8px 3px 3px;
+    }
+    .header .last-head-part button {
+        font-size: 12px;
+        padding: 5px;    }
+    .header{
+        height: 50vh;
+    }
+    .header nav {
+        height: 60px;
+    }
+    .header .main {
+        height: 50vh;
+    }
+    .header .head-cont {
+        height: calc(103% - 80px);
+    }
+    .header nav span img {
+        width: 60px;
+    }
+    .header nav .btn button {
+        padding: 6px;
+        font-size: 9px;
+    }
+}
+@media (max-width: 375px){
+    .header .head-cont> :nth-child(1) {
+        font-size: 15px;
+    }
+    .header .head-cont> :nth-child(2) {
+        font-size: 11px;
+    }
+    .header .head-cont> :nth-child(3) {
+        font-size: 9px;
+    }  
+    .header .last-head-part input {
+        padding: 3px 8px 3px 3px;
+        font-size: 12px;
+    }
+    .header .last-head-part button {
+        font-size: 9px;
+        padding: 4px;
+    }
+    .header nav span img {
+        width: 50px;
+    }
+    .header nav .btn button {
+        padding: 5px;
+        font-size: 8px;
+    }
+}
+@media (max-width: 421px){
+    body{
+        /* background-color: red */
+    }
+    .last-div-part2 .part2-inp-btn-box {
+        flex-direction: column;
+
+    }
+}
